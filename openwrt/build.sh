@@ -31,10 +31,10 @@ export isCN=`echo $ip_info | grep -Po 'country_code\":"\K[^"]+'`;
  # script url
  if [ "$isCN" = "CN" ]; then
 -    export mirror=init.cooluc.com
-+    export mirror=raw.githubusercontent.com/你的用户名/r4s_build_script/master
++    export mirror=raw.githubusercontent.com/yzy789/r4s_build_script/master
  else
 -    export mirror=init2.cooluc.com
-+    export mirror=raw.githubusercontent.com/你的用户名/r4s_build_script/master
++    export mirror=raw.githubusercontent.com/yzy789/r4s_build_script/master
  fi
 # github actions - automatically retrieve `github raw` links
 if [ "$(whoami)" = "runner" ] && [ -n "$GITHUB_REPO" ]; then
